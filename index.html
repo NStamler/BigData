@@ -145,29 +145,29 @@
 
   });
 //another scene
-    $("section").each(function(i) {
-      var inner = $(this).find(".inner");
-      var outer = $(this).find(".outer");
-      var tl = new TimelineMax();
+  //  $("section").each(function(i) {
+    //  var inner = $(this).find(".inner");
+    //  var outer = $(this).find(".outer");
+    //  var tl = new TimelineMax();
 
-      tl.to(outer, 5, {opacity:0, scaleX:1, ease: Back.easeOut });
-      tl.to(inner, 5, {opacity:0, ease: Back.easeOut });
+      //tl.to(outer, 5, {opacity:0, scaleX:1, ease: Back.easeOut });
+      //tl.to(inner, 5, {opacity:0, ease: Back.easeOut });
 
-      new ScrollMagic.Scene({
-        triggerElement: this,
-        triggerHook: -0.25,
-        duration: $("#divid").height()
-      })
-        .setTween(tl)
+      //new ScrollMagic.Scene({
+        //triggerElement: this,
+        //triggerHook: -0.25,
+        //duration: $("#divid").height()
+      //})
+        //.setTween(tl)
         //.addIndicators({
           //colorTrigger: "white",
           //colorStart: "white",
           //colorEnd: "white",
           //indent: 40
         //})
-        .addTo(ctrl);
+        //.addTo(ctrl);
 
-    });
+    //});
 
   </script>
   </head>
