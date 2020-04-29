@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>A Leaflet map of NYC!</title>
+  <link rel="stylesheet" href="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.css" />
+  <script src="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.js"></script>
+    <script src="jquery-2.1.1.min.js"></script>
+  <style>
+    #map{ width: 900px; height: 500px; }
+  </style>
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <script>
+
+  // initialize the map
+  var map = L.map('map').setView([40.71, -74.01], 10);
+
+  // load a tile layer
+  L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+    {
+      attribution: 'Tiles by <a href="http://nstamler.com">stamlern</a>, Data by <a href="https://streeteasy.com/blog/data-dashboard/?agg=Median&metric=Asking%20Rent&type=Rentals&bedrooms=One%20Bedroom&property=Any%20Property%20Type&minDate=2010-01&maxDate=2020-02&area=Flatiron,Brooklyn%20Heights">StreetEasy</a>',
+      maxZoom: 17,
+      minZoom: 9
+    }).addTo(map);
+
+  </script>
+</body>
+</html>
