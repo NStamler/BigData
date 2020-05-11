@@ -54,41 +54,6 @@
                     <h1>580,000</h1>
                 </div>
             </div>
-		
-<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
-<link
-rel="stylesheet"
-href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css"
-type="text/css"
-/>
-<div id="comparison-container">
-<div id="before" class="map"></div>
-<div id="after" class="map"></div>
-</div>
-<script>
-	mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhbWxlcm4iLCJhIjoiY2l3MnkwZ2tnMDEwejJ6anZtM240c2d3byJ9.ZTqhEH-1r0WelPq2n0rshQ';
-var beforeMap = new mapboxgl.Map({
-container: 'before',
-style: 'mapbox://styles/stamlern/ck9yhhdij0evi1io8twnibdak',
-center: [-74,40.7],
-zoom: 9
-});
-
-var afterMap = new mapboxgl.Map({
-container: 'after',
-style: 'mapbox://styles/stamlern/ck9ysl6530rm51ip8wj5a43xp',
-center: [-74,40.7],
-zoom: 9
-});
-
-// A selector or reference to HTML element
-var container = '#comparison-container';
-
-var map = new mapboxgl.Compare(beforeMap, afterMap, container, {
-// Set this to enable comparing two maps by mouse movement:
-// mousemove: true
-});
-</script>
             
         </section>
         
