@@ -27,10 +27,11 @@ section{
 }
 .nav{
     position: absolute;
-    padding-top:5em;
+    padding-top:3em;
     width: 30%;
     right: 7%;
     z-index: 100;
+    top: 0;
   }
 .nav ul{
     list-style-type: none;
