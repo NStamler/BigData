@@ -115,7 +115,7 @@ section{
     position: relative;
 }
 .col{
-    width: 50%;
+    flex: 50%;
 }
 .col p{
     width: 90%;
