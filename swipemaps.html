@@ -65,6 +65,9 @@ var map = new mapboxgl.Compare(beforeMap, afterMap, container, {
 // Set this to enable comparing two maps by mouse movement:
 // mousemove: true
 });
+	
+L.mapbox.legendControl({ position: 'topleft' }).addLegend('<strong>50% AMI</strong>').addTo(map);
+L.mapbox.legendControl({ position: 'topright' }).addLegend('<strong>30% AMI</strong>').addTo(map);
 </script>
 
 </body>
